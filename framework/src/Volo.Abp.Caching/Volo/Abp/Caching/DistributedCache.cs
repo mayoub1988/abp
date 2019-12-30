@@ -421,6 +421,7 @@ namespace Volo.Abp.Caching
                 if (hideErrors == true)
                 {
                     Logger.LogException(ex, LogLevel.Warning);
+                    return;
                 }
 
                 throw;
